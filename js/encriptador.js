@@ -2,6 +2,7 @@ let textToEncrypt;
 
 function encrypt(){
   textToEncrypt = document.getElementById("textToEncrypt");
+  textToEncrypt.addEventListener("click",clearText)
   let btnToencrypt = document.getElementById("btn-encrypt");
   btnToencrypt.addEventListener("click", encryptText)
   let btnDecrypt = document.getElementById("btn-decrypt")
@@ -53,7 +54,6 @@ function showTextEncrypt(text){
   textEncrypted.innerText=text;
   let btnCopy = document.getElementById("btn-copy");
   btnCopy.style.display = "block"
-  textToEncrypt.focus();
 }
 
 function copy(){
@@ -64,4 +64,8 @@ function copy(){
   console.log(textToCopy.value,"print");
 }
 
+function clearText(){
+  textToEncrypt.focus();
+  textToEncrypt.select();
+}
 window.addEventListener("load",encrypt)
