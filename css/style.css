@@ -90,7 +90,7 @@ main{
   border-radius: 24px;
   margin-right: 10px;
 }
-.encript{
+.encrypt{
   background: var(--dark-blue-300);
   color: white;
 }
@@ -103,8 +103,9 @@ main{
   margin: 0,auto;
   width: auto;
 }
-#panel-right div{
+#container-text-encrypt{
   margin: 10% auto;
+  height: 600px;
   padding: 40px;
   justify-content: center;
   align-items: center;
@@ -113,15 +114,16 @@ main{
   border-radius: 32px;
 }
 #panel-right img{
-  margin-top: 200px;
+  margin-top: 30px;
   width: 100%;
   height:330px;
 }
-.text-encript{
+.text-encrypt{
   display: none;
-  font-size: 24px;
+  height: auto;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 100%;
   color:var(--gray-500);
   margin: 0,auto;
   padding: 20px;
@@ -147,8 +149,8 @@ main{
   color: var(--dark-blue-300);
   justify-content: center;
   align-items:center;
-  margin-top: 300px;
-  position: fixed;
+  margin-top: 100px;
+  position: relative;
   margin-left: 40px;
 }
 

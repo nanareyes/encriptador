@@ -22,24 +22,23 @@
     <section id="principal">
       <form id="form">
         <div class="input">
-          <textarea class="input-text">
-            Ingrese el texto aqui
-          </textarea>
-          <p class="principal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt laborum fugiat vitae, temporibus suscipit perspiciatis vel laudantium commodi itaque atque, doloribus, ad sed. Sunt ex nisi nostrum tempore rerum.</p>
+          <textarea id="textToEncrypt" class="input-text" placeholder="Ingrese el texto aqui" rows="5" cols="40" ></textarea>
         </div>
         <span class="span-btn">⌽ Solo letras minúsculas y sin acentos</span>
         <div class="section-btn">
-          <button type="submit" id="btn-encript" class="btn encript">Encriptar</button>
-          <button type="submit" id="btn-decrypt" class="btn decrypt">Desencriptar</button>
+          <button type="button" id="btn-encrypt" class="btn encrypt">Encriptar</button>
+          <button type="button" id="btn-decrypt" class="btn decrypt">Desencriptar</button>
         </div>
       </form>
     </section>
     <section id="panel-right">
-      <div>
-        <p class="text-encript">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus assumenda corporis, ea iure dignissimos deserunt repellendus nostrum eum ipsum natus esse iusto asperiores error, soluta, quo tempora blanditiis tenetur ipsam.</p>
-        <img src="./img/muneco.png" alt="imagen de persona mirando a traves de una lupa">
-        <h3 class="message">Ningún mensaje fue <br> encontrado</h3>
-        <p class="paragraph">Ingresa el texto que desees encriptar o <br> desencriptar</p>
+      <div id="container-text-encrypt">
+        <p id="text-encrypt" class="text-encrypt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus assumenda corporis, ea iure dignissimos deserunt repellendus nostrum eum ipsum natus esse iusto asperiores error, soluta, quo tempora blanditiis tenetur ipsam.</p>
+        <div id="container-img">
+          <img src="./img/muneco.png" alt="imagen de persona mirando a traves de una lupa">
+          <h3 class="message">Ningún mensaje fue <br> encontrado</h3>
+          <p class="paragraph">Ingresa el texto que desees encriptar o <br> desencriptar</p>
+        </div>
         <button id="btn-copy" class="btn copy">Copiar</button>
       </div>
     </section>
