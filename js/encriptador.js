@@ -53,12 +53,15 @@ function showTextEncrypt(text){
   textEncrypted.innerText=text;
   let btnCopy = document.getElementById("btn-copy");
   btnCopy.style.display = "block"
+  textToEncrypt.focus();
 }
 
 function copy(){
   let textToCopy = document.getElementById("text-encrypt");
-  textToCopy.removeAttribute("disabled");
-  navigator.clipboard.writeText(textToCopy.value)
+  textToCopy.removeAttribute("disable")
+  textToCopy.select()
+  navigator.clipboard.writeText(textToCopy.value);
+  console.log(textToCopy.value,"print");
 }
 
 window.addEventListener("load",encrypt)

@@ -121,6 +121,8 @@ main{
 .text-encrypt{
   display: none;
   height: auto;
+  background: white;
+  border: 0;
   font-size: 22px;
   font-weight: 400;
   line-height: 100%;
